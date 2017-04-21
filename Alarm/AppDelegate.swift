@@ -9,6 +9,10 @@
 import UIKit
 import Fabric
 import Crashlytics
+import MobileCenterDistribute
+import MobileCenterCrashes
+import MobileCenterAnalytics
+import MobileCenter
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        MSMobileCenter.start("appTestToken", withServices: [MSAnalytics.self, MSCrashes.self, MSDistribute.self])
         // Override point for customization after application launch.
         
         HelpshiftCore.initialize(with: HelpshiftAll.sharedInstance())

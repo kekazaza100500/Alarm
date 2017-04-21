@@ -11,6 +11,9 @@ target 'Alarm' do
   pod 'RevealingSplashView', '~> 0.2'
   pod 'SkyFloatingLabelTextField', '~> 3.0'
   pod 'Helpshift', '5.10-bitcode'
+  pod 'MobileCenter/MobileCenterAnalytics'
+  pod 'MobileCenter/MobileCenterCrashes'
+  pod 'MobileCenter/MobileCenterDistribute'
 end
 
 #target 'Alarm WatchKit App' do
